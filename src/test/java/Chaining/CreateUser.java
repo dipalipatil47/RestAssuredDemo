@@ -30,6 +30,7 @@ public class CreateUser {
 	 .post("https://gorest.co.in/public/v2/users")
 	 .jsonPath().getInt("id");
 	 System.out.println("Generated id:"+id);
+	 System.out.println("User created");
 	 
 	 context.setAttribute("user_id", id);
 	}
